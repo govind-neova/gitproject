@@ -1,0 +1,11 @@
+variable "region" {
+  default = "us-east-1"
+}
+
+variable "aws_ami" {
+  type = "i-06e15c57da34ef5b4"
+}
+
+variable "aws_key_pair" {
+  type = "Verginia.pem"
+}
