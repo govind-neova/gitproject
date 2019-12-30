@@ -6,9 +6,9 @@ echo $varId2
 echo $varId1
 echo"`git diff $varId2 $varId1 test`"
 
-git diff $varId2 $varId1 test
+varOutput=`git diff $varId2 $varId1 test`
 
-if [ $? -eq 0 ]
+if [ -n $varOutput ]
 then
 	echo "hiiiiiiiii"
 else
