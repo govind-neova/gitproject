@@ -12,7 +12,7 @@ varOutput="$(git diff $varId2 $varId1 test|grep -o test|uniq)"
 echo $varOutput
 
 #if [ $varOutput==" " ]
-if [ $varOutput ]
+if [ -z $varOutput ]
 then
 	echo "Thre is no change in the test file."
 	exit 0
