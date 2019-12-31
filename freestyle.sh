@@ -13,7 +13,7 @@ echo $varOutput
 if [ $varOutput==" " ]
 then
 	echo "Thre is no change in the test file."
-	exit 1
+	exit 0
 else
 	varImage_name=`cat /var/lib/jenkins/workspace/github/test |grep -i tag|awk -F : '{print $2}'`
 	varIp_address=`cat /var/lib/jenkins/workspace/github/test |grep -i ip-address|awk -F : '{print $2}'`
