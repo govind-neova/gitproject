@@ -8,7 +8,7 @@ echo $varId1
 
 #varOutput=`git diff $varId2 $varId1 test |head -2|awk -F " " '{print $4}'`
 varOutput="$(git diff $varId2 $varId1 test)"
-echo $varOutput
+echo $varOutput > output
 
 if [ $varOutput==" " ]
 then
