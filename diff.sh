@@ -12,7 +12,7 @@ echo $varOutput
 
 if [ $varOutput==" " ]
 then
-	echo "non zero string"
+	echo "Output is not present"
 else
-	echo "lenth zero string"
+	echo "Output is present"
 fi
