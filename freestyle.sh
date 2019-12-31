@@ -16,6 +16,7 @@ then
 	echo "Thre is no change in the test file."
 	exit 0
 else
+	echo "deploying docker container"
 	varImage_name=`cat /var/lib/jenkins/workspace/github/test |grep -i tag|awk -F : '{print $2}'`
 	varIp_address=`cat /var/lib/jenkins/workspace/github/test |grep -i ip-address|awk -F : '{print $2}'`
 	scp -pr /var/lib/jenkins/workspace/github/test ec2-user@54.161.192.128:~/
